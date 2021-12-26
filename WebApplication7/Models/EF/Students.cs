@@ -12,8 +12,9 @@ namespace WebApplication7.Models.EF
         public int StudentId { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
+        public string Mobile { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public int? Gender { get; set; }
+        public decimal? Salary { get; set; }
         public string Notes { get; set; }
     }
 }

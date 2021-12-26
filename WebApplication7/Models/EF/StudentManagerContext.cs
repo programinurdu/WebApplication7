@@ -43,9 +43,9 @@ namespace WebApplication7.Models.EF
 
                 entity.Property(e => e.FullName).HasMaxLength(250);
 
-                entity.Property(e => e.Notes)
-                    .HasMaxLength(10)
-                    .IsFixedLength();
+                entity.Property(e => e.Mobile).HasMaxLength(50);
+
+                entity.Property(e => e.Salary).HasColumnType("decimal(18, 2)");
             });
 
             OnModelCreatingPartial(modelBuilder);
